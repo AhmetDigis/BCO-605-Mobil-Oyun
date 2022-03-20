@@ -31,9 +31,4 @@ public class SceneLoader : MonoBehaviour {
         // index+1'deki leveli yukle
         SceneManager.LoadScene(nextLevel);
     }
-
-    public void ReloadCurrentLevel() {
-        int currentIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentIndex);
-    }
 }
